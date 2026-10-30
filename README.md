@@ -17,9 +17,9 @@
 
 ## 界面展示
 
-[![分批结算：高精度单价与实际结算额分列](assets/settlement.png)](https://fxbillu.github.io/side-project-showcase/#screens)
+[![分批结算：高精度单价与实际结算额分列](assets/settlement.png)](https://fxbillu.github.io/side-project-showcase/#screen-settlement)
 
-[查看全部六张实机截图](https://fxbillu.github.io/side-project-showcase/#screens)。截图来自不同日期的模拟业务快照，展示排版不改变业务数字与状态。
+[查看全部六张实机截图](https://fxbillu.github.io/side-project-showcase/#screens) · [分批结算原图](assets/screenshots/settlement-raw.png)。截图来自不同日期的模拟业务快照，展示排版不改变业务数字与状态。
 
 ## 验证与边界
 

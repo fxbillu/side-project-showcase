@@ -3,7 +3,7 @@
   "content": "static showcase with simulated data",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "README.md": "ec990624cfd7040d3a1c9f6d65c5b3ac39778b09b5c060e7c6bbe518c84788d2",
+    "README.md": "06678800e66547c3967cab0fe7b596d28878fb0ed900b9583e549b940f8bb19c",
     "assets/audit.png": "b066202324daadb3438738fe965691a876cefa9d35ef9b46dd0672d116f7f7ed",
     "assets/hero.svg": "607c852ef138a84939a1d391207a973f3a850bc3083a457595eab5f830b0310e",
     "assets/inventory.png": "3a59a81fb36cb4eea5a5a8fc93105990edc2dadd16d8c4ad32129bff13553a13",
@@ -17,6 +17,6 @@
     "assets/screenshots/stocktake-raw.png": "a622b6e2b6c7e2753f88731ee84632347bfa6df1a3c1a5a5a67d48dd230d9401",
     "assets/settlement.png": "5bd3c168319dbc1d2c61cde79eaab4e2f9134d876abbb4f1631b259a9c787e21",
     "assets/stocktake.png": "731ae657f05535af99e5e9823deabb5b2cce9579f5db47549592dfa3625437bf",
-    "index.html": "c996344a2f060852cda58b94955c0f324598a81dda4d4a56d59221dfb747a490"
+    "index.html": "f2512c86fa267a049b3a9f296eea2295bde708730bd4fd885b3f75b52f9ab4b9"
   }
 }
