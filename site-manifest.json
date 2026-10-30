@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "content": "static showcase with simulated data",
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "ec990624cfd7040d3a1c9f6d65c5b3ac39778b09b5c060e7c6bbe518c84788d2",
+    "assets/audit.png": "b066202324daadb3438738fe965691a876cefa9d35ef9b46dd0672d116f7f7ed",
+    "assets/hero.svg": "607c852ef138a84939a1d391207a973f3a850bc3083a457595eab5f830b0310e",
+    "assets/inventory.png": "3a59a81fb36cb4eea5a5a8fc93105990edc2dadd16d8c4ad32129bff13553a13",
+    "assets/overview.png": "a49ad87ecb9b702b8e33b140f87e0678f57ec3047bb5b4571e6749d9f2212685",
+    "assets/reports.png": "10187e5d5640a3ddd946f84a6c16f66366cad9df212300a95acdce3a90415368",
+    "assets/screenshots/audit-raw.png": "933a9e9bfee7d58c89f31c65b50015d8e49c7c3728358dce3649ebb9c7c039d9",
+    "assets/screenshots/inventory-raw.png": "565581382f1156e9df07ec5420f8f79c3620f755435b5f45c1e24dc87bb9be05",
+    "assets/screenshots/overview-raw.png": "a0d02b8d5f26e663db562ea28e1e36d96efb1ad81adb6c251278ea2916fb65cc",
+    "assets/screenshots/reports-raw.png": "1532b1168354a510a8417866a8ab4c6e724db544b7ab844393117f73afb90c2e",
+    "assets/screenshots/settlement-raw.png": "b74832e8bd688825fc3fc7805a69f54f08ecf4193ca54b8a4cf9d81778f7c3b6",
+    "assets/screenshots/stocktake-raw.png": "a622b6e2b6c7e2753f88731ee84632347bfa6df1a3c1a5a5a67d48dd230d9401",
+    "assets/settlement.png": "5bd3c168319dbc1d2c61cde79eaab4e2f9134d876abbb4f1631b259a9c787e21",
+    "assets/stocktake.png": "731ae657f05535af99e5e9823deabb5b2cce9579f5db47549592dfa3625437bf",
+    "index.html": "c996344a2f060852cda58b94955c0f324598a81dda4d4a56d59221dfb747a490"
+  }
+}
