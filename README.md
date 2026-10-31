@@ -6,7 +6,9 @@
 
 面向**单公司、多仓库**商贸业务的自主开发案例。连接采购、销售、库存与往来结算，保留可追溯、可复核的业务记录。
 
-**[查看在线展示 ↗](https://fxbillu.github.io/side-project-showcase/#journey)** &nbsp; · &nbsp; [阅读公开验证材料](verification/README.md) &nbsp; · &nbsp; [了解设计取舍](https://fxbillu.github.io/side-project-showcase/#design)
+**[查看在线展示 ↗](https://fxbillu.github.io/side-project-showcase/#journey)**
+
+[公开验证材料](verification/README.md) · [设计取舍](https://fxbillu.github.io/side-project-showcase/#design)
 
 [![实际业务总览：采购、销售、库存与往来款的统一入口](assets/overview.png)](https://fxbillu.github.io/side-project-showcase/#screens)
 
