@@ -1,0 +1,72 @@
+{
+  "recordedStart": "2026-10-29T00:26:21.105184+00:00",
+  "recordedFinish": "2026-10-29T00:26:22.444667+00:00",
+  "status": "PASS",
+  "evidenceType": "Archived test-execution report, not rerun by this public verifier",
+  "checks": [
+    {
+      "name": "两次采购形成200件库存、均价15元",
+      "status": "PASS"
+    },
+    {
+      "name": "销售60件形成1500应收、900成本、600毛利",
+      "status": "PASS"
+    },
+    {
+      "name": "重复审核不重复扣库存或记账",
+      "status": "PASS"
+    },
+    {
+      "name": "部分收款后应收余额600元",
+      "status": "PASS"
+    },
+    {
+      "name": "超额收款整笔失败",
+      "status": "PASS"
+    },
+    {
+      "name": "跨仓调拨数量与价值守恒",
+      "status": "PASS"
+    },
+    {
+      "name": "销售退回10件恢复原成本和应收",
+      "status": "PASS"
+    },
+    {
+      "name": "超量退货整笔失败",
+      "status": "PASS"
+    },
+    {
+      "name": "库存变化后拒绝过期盘点",
+      "status": "PASS"
+    },
+    {
+      "name": "接口级权限与成本脱敏",
+      "status": "PASS"
+    },
+    {
+      "name": "CSV错误行导致整批不写入",
+      "status": "PASS"
+    },
+    {
+      "name": "审计可查询且筛选库存可导出",
+      "status": "PASS"
+    },
+    {
+      "name": "采购退货分别按库存成本和原采购价处理",
+      "status": "PASS"
+    },
+    {
+      "name": "已收款销售全退后退款结清",
+      "status": "PASS"
+    },
+    {
+      "name": "两条独立HTTP会话并发出库不超卖",
+      "status": "PASS"
+    },
+    {
+      "name": "并存退货草稿按累计金额分摊尾差并完整退款",
+      "status": "PASS"
+    }
+  ]
+}

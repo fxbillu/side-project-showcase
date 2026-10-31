@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-29T02:13:31.504426+00:00",
+  "sourceSnapshotSha256": "c73b095ea1486e0956f8247abc0a4a3dff6e1bb02d76317615f26f877f2fc1ed",
+  "extraction": "Selected fields of original public-API snapshot; statuses and amounts unchanged; no account/contact/runtime data",
+  "order": {
+    "id": 33,
+    "number": "PURCHASE_ORDER-000033",
+    "status": "CANCELLED",
+    "quantity": "3.000",
+    "unitPrice": "0.335000",
+    "totalAmount": "1.01"
+  },
+  "batchesByApprovalTime": [
+    {
+      "id": 36,
+      "number": "PURCHASE_RECEIPT-000036",
+      "status": "REVERSED",
+      "sourceDocumentId": 33,
+      "approvedAt": "2026-10-29T00:40:54.972724Z",
+      "quantity": "1.000",
+      "settlementAmount": "0.34"
+    },
+    {
+      "id": 35,
+      "number": "PURCHASE_RECEIPT-000035",
+      "status": "REVERSED",
+      "sourceDocumentId": 33,
+      "approvedAt": "2026-10-29T00:41:21.955913Z",
+      "quantity": "1.000",
+      "settlementAmount": "0.33"
+    },
+    {
+      "id": 34,
+      "number": "PURCHASE_RECEIPT-000034",
+      "status": "REVERSED",
+      "sourceDocumentId": 33,
+      "approvedAt": "2026-10-29T00:41:39.889351Z",
+      "quantity": "1.000",
+      "settlementAmount": "0.34"
+    }
+  ],
+  "limits": "These receipts were later reversed and the order remainder cancelled. This demonstrates preserved historical settlement amounts, not active/current purchases."
+}

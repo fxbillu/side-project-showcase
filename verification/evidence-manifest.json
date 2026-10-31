@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "data/api-check-record.json": "bb5cf2c6fa13e29ac3c1de6d60ccaf474a5fae3b95841db8bca2426975ce872b",
+    "data/r1-inventory.csv": "79b28b6a49aa91b7729458fbad795155a599679488e0881e0a8e9c6e0902c360",
+    "data/r1-statement.csv": "0d238b082aba6f698b6231ac4df3a1a98f92818cb6ca0bc44148929e603c4c11",
+    "data/settlement-batches.json": "46bd3f234b49465a5880ca50cbdc765f7f298dfcac90eb6f37e597286a9f0b42",
+    "summary.json": "db35756563e5fa7800affb089a4cb5b9598b9e342b8c9798a72fcd416b67a195"
+  },
+  "meaning": "Content identity check only;not a digital signature"
+}

@@ -7,12 +7,14 @@
 <meta name="description" content="单公司、多仓库进销存：单据、库存、往来结算与可复验的业务设计。">
 <style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f6f2;color:#183b31;font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}a{color:#286352;text-underline-offset:4px}main{max-width:1140px;margin:auto;padding:44px 28px 70px}nav{display:flex;gap:22px;flex-wrap:wrap;border-bottom:1px solid #d6e0d9;padding-bottom:20px;font-size:14px}.hero{padding:50px 0 34px}small,.muted{color:#62776b}h1{font-size:clamp(36px,7vw,64px);line-height:1.2;margin:12px 0 20px;letter-spacing:-2px}h2{font-size:28px;line-height:1.4;margin:0 0 14px}.intro{max-width:760px;font-size:20px}.flow{padding:20px 0;border-top:1px solid #d6e0d9;border-bottom:1px solid #d6e0d9;margin:25px 0;color:#286352}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:34px 0 54px}.facts b{display:block;font-size:21px}.facts p{margin:7px 0;font-size:15px}figure{margin:0 0 44px}figure img{display:block;width:100%;height:auto;border-radius:12px}figcaption{padding:12px 3px;font-size:15px;color:#62776b}.number{font-size:14px;color:#62776b;display:block;margin-bottom:5px}.scope{border-top:1px solid #d6e0d9;padding-top:28px;margin-top:20px}footer{margin-top:40px;color:#62776b;font-size:14px}@media(max-width:640px){main{padding:24px 16px 44px}.hero{padding-top:36px}.intro{font-size:18px}.facts{grid-template-columns:1fr;gap:16px;margin-bottom:34px}h2{font-size:24px}figure{margin-bottom:30px}}section,figure{scroll-margin-top:24px}.brand{font-weight:650;text-decoration:none}.actions{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin:28px 0 0}.button{background:#286352;color:white;padding:10px 20px;border-radius:6px;text-decoration:none}.explain{padding:36px 0;border-top:1px solid #d6e0d9;margin-bottom:28px}.decisions{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}h3{font-size:19px;margin:16px 0 4px}.decisions p{margin:0 0 14px}.api-list{margin:24px 0}.api-list div{padding:12px 0;border-bottom:1px solid #d6e0d9;display:flex;gap:20px;justify-content:space-between;align-items:baseline}.api-list code{font-size:14px;overflow-wrap:anywhere}.api-list span{font-size:14px;color:#62776b}.hero{padding:36px 0 26px}.facts{margin-bottom:28px}figure{padding-top:14px}@media(max-width:640px){.decisions{grid-template-columns:1fr}.api-list div{display:block}.api-list span{display:block}.explain{padding-top:24px}.actions{gap:14px}.hero{padding-top:26px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .screenshot-link{display:block;cursor:zoom-in;border-radius:12px}.screenshot-link:focus-visible{outline:3px solid #286352;outline-offset:5px}button{font:inherit}dialog.viewer{width:min(1280px,calc(100vw - 24px));max-width:none;height:calc(100dvh - 24px);max-height:none;padding:0;border:1px solid #55786b;border-radius:12px;color:#183b31;background:#f4f6f2;overflow:hidden}dialog.viewer::backdrop{background:rgba(9,27,22,.8)}.viewer-layout{display:flex;flex-direction:column;height:100%;min-width:0}.viewer-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #d6e0d9}.viewer-toolbar h2{font-size:19px;margin:0;flex:1;min-width:160px}.viewer-controls{display:flex;gap:8px;flex-wrap:wrap}.viewer button{padding:8px 12px;border:1px solid #b5cabc;border-radius:6px;background:white;color:#183b31;min-height:44px;cursor:pointer}.viewer button:focus-visible{outline:3px solid #286352;outline-offset:2px}.viewer-stage{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:12px;background:#dfe7df;display:flex;align-items:center;justify-content:center}.viewer-stage img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;flex:none;object-fit:contain}.viewer-stage.zoomed{display:block}.viewer-stage.zoomed img{width:auto;max-width:none;max-height:none;object-fit:initial}.viewer-help{font-size:14px;line-height:1.5;color:#536c5f;padding:10px 18px;margin:0}.viewer-link{font-size:14px;white-space:nowrap}body.viewer-open{overflow:hidden}@media(max-width:640px){.viewer-toolbar{padding:10px;gap:8px}.viewer-toolbar h2{min-width:100%;font-size:17px}.viewer-controls{width:100%;justify-content:space-between;gap:4px}.viewer button{padding:7px 10px;font-size:14px}.viewer-stage{padding:6px}.viewer-help{padding:8px 10px;font-size:13px}}
+.journey-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 36px;padding-left:24px;margin:28px 0}.journey-steps li{padding-left:5px}.journey-steps b{font-size:20px}.journey-steps p{margin:8px 0}.reading-note{font-size:17px;line-height:1.9;margin:16px 2px 4px}.evidence-note{padding:16px 18px;background:#e8eee7;border-radius:8px;font-size:15px}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.limits{padding:16px 0}.limits summary{cursor:pointer;font-weight:600}.evidence-grid .button{display:inline-block;font-size:15px;margin:8px 12px 8px 0}a:focus-visible,summary:focus-visible{outline:3px solid #286352;outline-offset:4px}@media(max-width:640px){.journey-steps,.evidence-grid{grid-template-columns:1fr}.journey-steps{gap:20px}.reading-note{font-size:16px}}
 </style>
 </head>
 <body>
 <main id="top">
 <nav aria-label="项目导航">
 <a class="brand" href="#top">商序 / 业务系统案例</a>
+<a href="#journey">业务流程</a>
 <a href="#screens">界面展示</a>
 <a href="#design">设计思路</a>
 <a href="#interfaces">接口能力</a>
@@ -25,7 +27,7 @@
 <div class="flow">采购与销售 → 分批收发货 → 库存流水 → 往来结算 → 独立核对</div>
 <p class="muted">Java 21 / Spring Boot / PostgreSQL / Vue 3 / TypeScript</p>
 <p class="actions">
-<a class="button" href="#screens">查看六张界面</a>
+<a class="button" href="#journey">看一笔业务怎么走</a>
 <a href="#design">了解设计与实现 →</a>
 </p>
 </header>
@@ -42,6 +44,69 @@
 <b>可复核结果</b>
 <p>从公开 API 和实际 CSV 下载，核对库存、流水与往来款。</p>
 </div>
+</section>
+<section class="explain" id="journey" aria-labelledby="journey-title">
+<span class="number">WORKFLOW / 按业务走一遍</span>
+<h2 id="journey-title">从一张订单，到库存与账款核对。</h2>
+<p>这套系统处理的是采购、销售、仓库和财务之间的交接。下面沿真实功能说明各步如何衔接；截图采集于不同的模拟测试时点，用于展示各环节如何衔接。</p>
+<ol class="journey-steps"><li><b>建立业务来源</b><p>采购或销售人员建立订单，后续收发货引用来源行，控制可执行数量。</p><a href="#screen-overview">先看业务入口 →</a></li><li><b>分批执行与入账</b><p>仓库按实际到货或发货数量执行；审核时记录库存变化和实际结算额。</p><a href="#screen-settlement">看分批金额 →</a></li><li><b>核对库存与往来款</b><p>按仓查看数量与价值，财务按来源账项收付款，再看对账与经营口径。</p><a href="#screen-inventory">看库存 →</a> · <a href="#screen-reports">看报表 →</a></li><li><b>处理差异并留痕</b><p>退货退款沿原业务处理；盘点补充成本确认，资料变更和冲销保留追溯记录。</p><a href="#screen-stocktake">看盘点职责 →</a> · <a href="#screen-audit">看审计 →</a></li></ol>
+<p class="evidence-note">想自己核对数字？<a href="verification/">公开材料中有74件/740元的分仓库存、客户账款归零、0.34/0.33/0.34批次金额三个离线算例。</a></p>
+</section>
+<section id="screens" aria-label="六张实机截图">
+<figure id="screen-overview">
+<span class="number">01 / 业务总览</span>
+<h2>从业务入口到经营摘要</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/overview-raw.png" aria-label="查看业务总览原图">
+<img src="assets/overview.png" alt="业务总览，点击查看可放大的原图" loading="lazy" width="1600" height="1048">
+</a>
+<p class="reading-note"><b>先看业务从哪里开始。</b> 采购、销售、库存与往来结算各有入口，最近单据提供业务状态索引；经营摘要帮助定位下一步要查的环节。 <a href="#screen-settlement">接着看分批执行 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-27 · <a data-viewer href="assets/screenshots/overview-raw.png">放大查看原图</a></figcaption>
+</figure>
+<figure id="screen-inventory">
+<span class="number">02 / 多仓库库存</span>
+<h2>数量与价值，分仓查看</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/inventory-raw.png" aria-label="查看多仓库库存原图">
+<img src="assets/inventory.png" alt="多仓库库存，点击查看可放大的原图" loading="lazy" width="1600" height="1048">
+</a>
+<p class="reading-note"><b>收发货之后，检查库存落在哪个仓。</b> 按商品和仓库读取数量、价值与平均成本；余额与库存流水需要共同核对，不能只看总数。 <a href="verification/">用公开CSV复算分仓数量与价值 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-27 · <a data-viewer href="assets/screenshots/inventory-raw.png">放大查看原图</a></figcaption>
+</figure>
+<figure id="screen-settlement">
+<span class="number">03 / 分批收发货</span>
+<h2>单价精度与实际结算额</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/settlement-raw.png" aria-label="查看分批收发货原图">
+<img src="assets/settlement.png" alt="分批收发货，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
+</a>
+<p class="reading-note"><b>订单允许分批执行，金额也必须累计对齐。</b> 图中保留0.335单价，本批实际结算额为0.33；结算金额与库存成本精度分开。 <a href="#screen-inventory">再看库存结果 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-29 · <a data-viewer href="assets/screenshots/settlement-raw.png">放大查看原图</a></figcaption>
+</figure>
+<figure id="screen-stocktake">
+<span class="number">04 / 盘盈成本确认</span>
+<h2>先明确成本，再审核入账</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/stocktake-raw.png" aria-label="查看盘盈成本确认原图">
+<img src="assets/stocktake.png" alt="盘盈成本确认，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
+</a>
+<p class="reading-note"><b>库存有差异时，先明确数量与成本职责。</b> 仓库填写实盘数量，管理员或财务确认零库存盘盈的单位成本，再由有权限的人审核。确认记录保留人和时间。 <a href="#screen-audit">接着看变更留痕 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-29 · <a data-viewer href="assets/screenshots/stocktake-raw.png">放大查看原图</a></figcaption>
+</figure>
+<figure id="screen-reports">
+<span class="number">05 / 经营报表</span>
+<h2>报表数字，也要有计算口径</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/reports-raw.png" aria-label="查看经营报表原图">
+<img src="assets/reports.png" alt="经营报表，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
+</a>
+<p class="reading-note"><b>执行与结算后，看清报表每个数字的含义。</b> 销售和成本按业务期间统计，库存与往来款是当前余额；后续冲销会重算原期间。 <a href="verification/">用公开对账CSV核对收款、退货和退款 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-29 · <a data-viewer href="assets/screenshots/reports-raw.png">放大查看原图</a></figcaption>
+</figure>
+<figure id="screen-audit">
+<span class="number">06 / 变更审计</span>
+<h2>保留修改前后的具体字段</h2>
+<a class="screenshot-link" data-viewer href="assets/screenshots/audit-raw.png" aria-label="查看变更审计原图">
+<img src="assets/audit.png" alt="变更审计，点击查看可放大的原图" loading="lazy" width="1600" height="1168">
+</a>
+<p class="reading-note"><b>资料修改后，还能追查当时发生了什么。</b> 操作者、结果与字段前后值可查；已审核单据另保留关键资料快照。 <a href="#verification">最后看验证范围与证据 →</a></p>
+<figcaption>实机截图 · 模拟数据 · 2026-10-29 · <a data-viewer href="assets/screenshots/audit-raw.png">放大查看原图</a></figcaption>
+</figure>
 </section>
 <section class="explain" id="design">
 <span class="number">DESIGN / 从业务约束到实现</span>
@@ -96,69 +161,19 @@
 <p>另有 CSV 资料导入、报表导出和接口契约。当前没有外部系统连接器、机器令牌、Webhook 或第三方 SSO；具体集成需继续确定鉴权、字段映射和失败重试。</p>
 <p class="muted">这些是实际系统的接口说明，当前静态站点不提供业务 API。</p>
 </section>
-<section id="screens" aria-label="六张实机截图">
-<figure id="screen-overview">
-<span class="number">01 / 业务总览</span>
-<h2>从业务入口到经营摘要</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/overview-raw.png" aria-label="查看业务总览原图">
-<img src="assets/overview.png" alt="业务总览，点击查看可放大的原图" loading="lazy" width="1600" height="1048">
-</a>
-<figcaption>采购、销售、库存与往来结算集中呈现，点击截图可查看原图。 拍摄日期：2026-10-27。 <a data-viewer href="assets/screenshots/overview-raw.png">放大查看原图</a></figcaption>
-</figure>
-<figure id="screen-inventory">
-<span class="number">02 / 多仓库库存</span>
-<h2>数量与价值，分仓查看</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/inventory-raw.png" aria-label="查看多仓库库存原图">
-<img src="assets/inventory.png" alt="多仓库库存，点击查看可放大的原图" loading="lazy" width="1600" height="1048">
-</a>
-<figcaption>即时库存按商品和仓库列示，管理员与财务可查看金额和平均成本。 拍摄日期：2026-10-27。 <a data-viewer href="assets/screenshots/overview-raw.png">放大查看原图</a></figcaption>
-</figure>
-<figure id="screen-settlement">
-<span class="number">03 / 分批收发货</span>
-<h2>单价精度与实际结算额</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/settlement-raw.png" aria-label="查看分批收发货原图">
-<img src="assets/settlement.png" alt="分批收发货，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
-</a>
-<figcaption>原单价 0.335 与本批实际结算额 0.33 分列展示，保留累计分摊结果。 拍摄日期：2026-10-29。 <a data-viewer href="assets/screenshots/settlement-raw.png">放大查看原图</a></figcaption>
-</figure>
-<figure id="screen-stocktake">
-<span class="number">04 / 盘盈成本确认</span>
-<h2>先明确成本，再审核入账</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/stocktake-raw.png" aria-label="查看盘盈成本确认原图">
-<img src="assets/stocktake.png" alt="盘盈成本确认，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
-</a>
-<figcaption>管理员或财务确认零库存盘盈单位成本，仓库按职责完成审核。 拍摄日期：2026-10-29。 <a data-viewer href="assets/screenshots/settlement-raw.png">放大查看原图</a></figcaption>
-</figure>
-<figure id="screen-reports">
-<span class="number">05 / 经营报表</span>
-<h2>报表数字，也要有计算口径</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/reports-raw.png" aria-label="查看经营报表原图">
-<img src="assets/reports.png" alt="经营报表，点击查看可放大的原图" loading="lazy" width="1600" height="1173">
-</a>
-<figcaption>页面说明业务日期、历史重算和当前余额范围，导出保持相同解释。 拍摄日期：2026-10-29。 <a data-viewer href="assets/screenshots/settlement-raw.png">放大查看原图</a></figcaption>
-</figure>
-<figure id="screen-audit">
-<span class="number">06 / 变更审计</span>
-<h2>保留修改前后的具体字段</h2>
-<a class="screenshot-link" data-viewer href="assets/screenshots/audit-raw.png" aria-label="查看变更审计原图">
-<img src="assets/audit.png" alt="变更审计，点击查看可放大的原图" loading="lazy" width="1600" height="1168">
-</a>
-<figcaption>基础资料变更展示操作者、时间、执行结果及字段前后值。 拍摄日期：2026-10-29。 <a data-viewer href="assets/screenshots/settlement-raw.png">放大查看原图</a></figcaption>
-</figure>
-</section>
 <section class="scope" id="verification">
-<h2>当前可核验的结果</h2>
-<p>四项已发现界面缺陷已修复并回归；35 项具体功能中，31 项具备两种真实页面场景或操作方法证据。前端 22 项组件测试、隔离 API 16 项验收及 16 份 CSV 核对已有通过记录，各层范围详见报告。</p>
-<p>当前为本地运行的自主开发案例，使用模拟数据。文件选择上传、实际改密与账号变更尚待操作验收；真实容器、云端和客户签收尚未完成。不同截图反映各自拍摄时状态。</p>
-<p>后端深化版本另有 32 项真实 PostgreSQL 测试及隔离备份恢复记录；测试层次与版本分别统计。页面数字为模拟业务快照，未将这些结果宣传为客户经营收益。</p>
-<a href="#design">回看实现方法</a> · <a href="#hosting">关于在线演示</a>
+<span class="number">EVIDENCE / 无需私有仓库也能核对</span><h2>记录可以看，三个算例可以自己复算。</h2>
+<div class="evidence-grid"><article><h3>公开可复算</h3><p>两份实际下载CSV与一份API字段摘录：库存64+10=74件、价值640+100=740；客户对账六行后余额0；历史分批金额0.34+0.33+0.34=1.01。</p><a class="button" href="verification/">打开验证摘要</a> <a href="verification.zip">下载材料包 ↓</a></article><article><h3>已有执行记录</h3><p>历史记录为22项前端组件测试、16项隔离API验收及16份CSV核对；35项功能中31项有两种页面场景/方法证据。发现的4项界面问题已修复回归。</p><a href="verification/data/api-check-record.json">查看API执行记录摘录 →</a></article></div>
+<p class="evidence-note">业务材料采集于2026-10-29，公开包整理于2026-10-31。三张入库批次在最终快照中已冲销，复算检查的是保留的历史分摊额；不同截图与CSV时点不同，不可混合成同一时点余额。</p>
+<p>本次公开包可独立检查文件哈希与三个算术关系，不会重跑后台，也不证明全部业务规则或生产可用性。测试次数属于不同层次，不能相加为全功能通过率。</p>
+<details class="limits"><summary>查看未完成项与证据边界</summary><p>使用模拟数据，暂无客户签收。文件选择上传受工具超时阻塞，实际改密和账号创建/启停/角色变更尚待完整操作验收；真实Docker、完整系统公网运行未完成。截图查看的手机检查使用浏览器移动视口，未声称真实手机/Safari均已验。</p><p>公开材料为维护者提供的测试摘录，文件哈希识别内容但不等于第三方背书。更多说明、原文件和脚本见<a href="verification/">公开复核页</a>。</p></details>
 </section>
 <section class="scope" id="hosting">
 <h2>在线演示的边界</h2>
 <p>本站由 GitHub Pages 托管，任何人都可通过链接查看介绍和截图。完整系统的真实登录、单据操作及数据库持久化将在后续单独部署。</p>
 <p>本地开发使用 Java 21、Node.js 22、PostgreSQL 和 Python 3；项目已有 Caddy / Compose 配置和原生恢复演练记录。真实容器与公网业务运行仍待验收。</p>
 </section>
-<footer>自主开发案例 · 模拟数据 · 更新于 2026-10-30<br>截图来自实际运行界面，仅添加展示排版。<a href="https://github.com/fxbillu/side-project-showcase">公开展示仓库与 README</a> · <a href="#top">返回顶部 ↑</a>
+<footer>自主开发案例 · 模拟数据 · 更新于 2026-10-31<br>截图来自实际运行界面，仅添加展示排版。<a href="https://github.com/fxbillu/side-project-showcase">公开展示仓库与 README</a> · <a href="#top">返回顶部 ↑</a>
 </footer>
 </main>
 <dialog class="viewer" id="image-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-help">

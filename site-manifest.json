@@ -1,9 +1,9 @@
 {
   "format": 1,
-  "content": "static showcase with simulated data",
+  "content": "static showcase and simulated-data verification excerpts",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "README.md": "b9fea6cbfc8f1d9836280ea286313716a7d7e4634facc91877e6111620d5121e",
+    "README.md": "b4ef5f994e781f451ddef248c5da60ed2aaa5a4346bf87668c9382d52e047853",
     "assets/audit.png": "b066202324daadb3438738fe965691a876cefa9d35ef9b46dd0672d116f7f7ed",
     "assets/hero.svg": "607c852ef138a84939a1d391207a973f3a850bc3083a457595eab5f830b0310e",
     "assets/inventory.png": "3a59a81fb36cb4eea5a5a8fc93105990edc2dadd16d8c4ad32129bff13553a13",
@@ -17,6 +17,16 @@
     "assets/screenshots/stocktake-raw.png": "a622b6e2b6c7e2753f88731ee84632347bfa6df1a3c1a5a5a67d48dd230d9401",
     "assets/settlement.png": "5bd3c168319dbc1d2c61cde79eaab4e2f9134d876abbb4f1631b259a9c787e21",
     "assets/stocktake.png": "731ae657f05535af99e5e9823deabb5b2cce9579f5db47549592dfa3625437bf",
-    "index.html": "f2512c86fa267a049b3a9f296eea2295bde708730bd4fd885b3f75b52f9ab4b9"
+    "index.html": "b3039b64174c6c3b251cbff5795a0f18cf175114a5387034f0c2e4dc7b0f1422",
+    "verification/README.md": "c8a5be78732f84af09eb84ca995e294044abb5ae43144b85dc346c4e4f981605",
+    "verification/data/api-check-record.json": "bb5cf2c6fa13e29ac3c1de6d60ccaf474a5fae3b95841db8bca2426975ce872b",
+    "verification/data/r1-inventory.csv": "79b28b6a49aa91b7729458fbad795155a599679488e0881e0a8e9c6e0902c360",
+    "verification/data/r1-statement.csv": "0d238b082aba6f698b6231ac4df3a1a98f92818cb6ca0bc44148929e603c4c11",
+    "verification/data/settlement-batches.json": "46bd3f234b49465a5880ca50cbdc765f7f298dfcac90eb6f37e597286a9f0b42",
+    "verification/evidence-manifest.json": "0dea41c33253e8b79cc707330495b777fdb4fd943942922df07b9c9582028623",
+    "verification/index.html": "ac6c8a42499a49cfefda90d16c66afe5f0243f0a9ce7793002055f0bb36624b4",
+    "verification/summary.json": "db35756563e5fa7800affb089a4cb5b9598b9e342b8c9798a72fcd416b67a195",
+    "verification/verify.py": "55bf40c7b40eb797daad982625db9f8fad0c7e022a6e980e06316cba8ea16353",
+    "verification.zip": "cfdac100399f984c1c9e368a36a555ae5fcdcf68f4365ac385f5bfcc885ca283"
   }
 }

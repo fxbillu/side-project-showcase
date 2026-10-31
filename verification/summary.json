@@ -1,0 +1,41 @@
+{
+  "preparedAt": "2026-10-31",
+  "businessEvidenceDate": "2026-10-29",
+  "dataKind": "simulated",
+  "scope": "Public excerpts and arithmetic replay;not full system acceptance",
+  "recordedResults": {
+    "frontendComponentTests": 22,
+    "isolatedApiChecks": 16,
+    "csvFilesChecked": 16,
+    "uiFeaturesWithTwoScenarios": 31,
+    "uiFeaturesTotal": 35,
+    "fixedUiIssues": 4
+  },
+  "replayableExamples": [
+    {
+      "case": "R1 two warehouses",
+      "expected": "64+10=74 units;640+100=740 value"
+    },
+    {
+      "case": "R1 customer statement",
+      "expected": "Every row balance=previous+amount-settlement;sixth row0"
+    },
+    {
+      "case": "Preserved fractional batch amounts",
+      "expected": "3×0.335 rounded to1.01;0.34+0.33+0.34=1.01;all three receipts are REVERSED"
+    }
+  ],
+  "notRunOrLimited": [
+    "File chooser upload blocked by test tool timeout",
+    "Actual password/account creation/enable/role writes not fully exercised",
+    "Real Docker/cloud full system and customer acceptance not completed",
+    "No physical mobile/Safari claim"
+  ],
+  "sources": {
+    "inventory": "Original UI-downloaded r1-inventory-export.csv,byte-for-byte copy",
+    "statement": "Original UI-downloaded r1-statement-export.csv,byte-for-byte copy",
+    "batches": "Selected fields from final-business-snapshot.json",
+    "apiRecord": "Names and statuses from archived api-crosscheck.json"
+  },
+  "limits": "Passing these three offline examples proves internal arithmetic of published snapshots, not all business policies, current balances or independent third-party attestation."
+}
